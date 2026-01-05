@@ -13,13 +13,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+
+use Illuminate\Support\Facades\Artisan;
+
+Route::get('/link', function () {
+    Artisan::call('storage:link');
+
+    return 'Storage link created successfully';
 });
+
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\MenuController;
 
 /* ADMIN */
+Route::get('/', [CategoryController::class, 'index']);
 Route::get('/admin/categories', [CategoryController::class, 'index']);
 Route::post('/admin/categories', [CategoryController::class, 'store']);
 Route::get('/admin/category/{category}/qr', [CategoryController::class, 'generateQr']);
