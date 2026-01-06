@@ -88,7 +88,7 @@
             width: 100%;
             height: 100%;
             /*background-image: url('{{ asset($item->image ?? "https://img.freepik.com/free-vector/realistic-burger-illustration_23-2151151678.jpg") }}');*/
-            background-image: url('https://i.pinimg.com/originals/08/8e/05/088e05bb4e0ab5f67758eeadf7ced571.gif');
+            background-image: url('https://img.freepik.com/free-psd/juicy-burger-with-crispy-fries-red-onions_191095-86335.jpg?semt=ais_hybrid&w=740&q=80');
             background-size: cover;
             background-position: center;
             border-radius: 50%;
