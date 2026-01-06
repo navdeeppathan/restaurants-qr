@@ -309,7 +309,7 @@
         width: 100%;
         height: 100%;
         /* background-image: url('https://png.pngtree.com/png-vector/20240705/ourlarge/pngtree-real-burger-fast-food-png-image_12959659.png'); */
-        background-image: asset('burgur.png');
+        background-image: url("{{ asset('burgur.png') }}");
 
         background-size: contain;
         background-repeat: no-repeat;
