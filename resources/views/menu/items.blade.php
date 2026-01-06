@@ -151,7 +151,7 @@
                 <div class="menu-img"
                      style="background-image:url('{{ $item->image ? asset($item->image) : 'https://upload.wikimedia.org/wikipedia/commons/d/d3/Supreme_pizza.jpg' }}')">
                     <span class="open-badge">Open</span>
-                    <span class="price-badge">₹{{ $item->price }}</span>
+                    <span class="price-badge">€{{ $item->price }}</span>
                 </div>
 
                 <div class="menu-content">
