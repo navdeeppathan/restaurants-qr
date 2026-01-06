@@ -113,10 +113,13 @@
         <div class="category-card">
             <div class="category-title">{{ $cat->name }}</div>
 
+            {{-- <a href="/admin/category/{{ $cat->id }}/qr" class="qr-btn">
+                Generate QR
+            </a> --}}
             <a href="/admin/category/{{ $cat->id }}/qr" class="qr-btn">
                 Generate QR
             </a>
-
+{{-- http://127.0.0.1:8000/menu/item/1 --}}
             @if($cat->qr_code)
                 <img src="{{ asset('storage/'.$cat->qr_code) }}" class="qr-img">
             @else

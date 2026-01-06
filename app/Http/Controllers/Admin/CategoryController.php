@@ -36,7 +36,9 @@ class CategoryController extends Controller
 
     public function generateQr(Category $category)
     {
-        $url = url('/menu/' . $category->slug);
+        // $url = url('/menu/' . $category->slug);
+        $url = url('/menu/items/1' );
+        
 
         $renderer = new ImageRenderer(
             new RendererStyle(300),
