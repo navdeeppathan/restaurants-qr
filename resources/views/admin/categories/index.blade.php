@@ -98,15 +98,15 @@
 <body>
 
 <h2>Categories</h2>
-<div style="margin-bottom: 20px;">
+{{-- <div style="margin-bottom: 20px;">
     <a href="{{url('admin/items')}}" style="background: #1d3557; padding: 10px 18px; color: #fff; border-radius: 6px; text-decoration: none;">Add Items</a>
-</div>
+</div> --}}
 
-<form method="POST" class="add-form">
+{{-- <form method="POST" class="add-form">
     @csrf
     <input name="name" placeholder="Category Name" required>
     <button type="submit">Add Category</button>
-</form>
+</form> --}}
 
 <div class="category-grid">
     @foreach($categories as $cat)
@@ -119,7 +119,7 @@
             <a href="/admin/category/{{ $cat->id }}/qr" class="qr-btn">
                 Generate QR
             </a>
-{{-- http://127.0.0.1:8000/menu/item/1 --}}
+
             @if($cat->qr_code)
                 <img src="{{ asset('storage/'.$cat->qr_code) }}" class="qr-img">
             @else

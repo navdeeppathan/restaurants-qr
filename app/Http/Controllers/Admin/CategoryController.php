@@ -36,15 +36,15 @@ class CategoryController extends Controller
 
     public function generateQr(Category $category)
     {
-        // $url = url('/menu/' . $category->slug);
-        $item = $category->items()->first();
+        $url = url('/menu/' . $category->slug);
+        // $item = $category->items()->first();
 
-        if (!$item) {
-            return back()->with('error', 'No item found in this category');
-        }
+        // if (!$item) {
+        //     return back()->with('error', 'No item found in this category');
+        // }
 
-        // ✅ Correct route
-        $url = url('/menu/item/' . $item->id);
+        // // ✅ Correct route
+        // $url = url('/menu/item/' . $item->id);
         
 
         $renderer = new ImageRenderer(
