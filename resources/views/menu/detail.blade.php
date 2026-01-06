@@ -308,7 +308,9 @@
     .pizza {
         width: 100%;
         height: 100%;
-        background-image: url('https://png.pngtree.com/png-vector/20240521/ourlarge/pngtree-tasty-burger-and-fries-on-transparent-background-png-image_12498956.png');
+        /* background-image: url('https://png.pngtree.com/png-vector/20240705/ourlarge/pngtree-real-burger-fast-food-png-image_12959659.png'); */
+        background-image: asset('burgur.png');
+
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
