@@ -88,7 +88,7 @@
             width: 100%;
             height: 100%;
             /*background-image: url('{{ asset($item->image ?? "https://img.freepik.com/free-vector/realistic-burger-illustration_23-2151151678.jpg") }}');*/
-            background-image: url('https://img.freepik.com/free-psd/juicy-burger-with-crispy-fries-red-onions_191095-86335.jpg?semt=ais_hybrid&w=740&q=80');
+            background-image: url('https://png.pngtree.com/png-vector/20240521/ourlarge/pngtree-tasty-burger-and-fries-on-transparent-background-png-image_12498956.png');
             background-size: cover;
             background-position: center;
             border-radius: 50%;
